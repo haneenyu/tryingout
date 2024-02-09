@@ -223,9 +223,7 @@ var demographics = {
 },
         // Other questions...
       ]
-    }
-  ]
-};
+    };
 
 timeline.push(demographics);
 
