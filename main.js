@@ -791,6 +791,7 @@ var pavlovia_finish = {
 
 // Define the full timeline
 var experimentTimeline = [
+    pavlovia_init,
     enter_fullscreen,
     consent,
     welcome,
@@ -808,6 +809,7 @@ var experimentTimeline = [
     debrief_block,
     completionCodeTrial,
     endMessage
+    pavlovia_finish
     ];
 
 var version = jsPsych.version();
