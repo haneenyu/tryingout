@@ -213,6 +213,12 @@ var demographics = {
           options: ['0-10%', '10-20%', '20-30%', '30-40%', '40-50%', '50-60%', '60-70%', '70-80%', '80-90%', '90-100%'],
           required: true
         },
+          {
+          prompt: "Which Social Media Platform do you frequent the most? (Please Select 1)",
+          name: 'SocialMediaPlatforms',
+          options: ['Facebook', 'Instagram', 'LinkedIn', 'SnapChat', 'TikTok', 'Twitter', 'Whatsapp', 'YouTube'],
+          required: true
+        },
       ]
 },
         // Other questions...
@@ -246,7 +252,7 @@ var changeDirectionToLTR = {
         timeline.push(changeDirectionToLTR);
  
     
-        var natural_ِMSA_timeline = {
+        var natural_ِMSA = {
             timeline: [
                 {
                     type: jsPsychHtmlKeyboardResponse,
@@ -327,7 +333,9 @@ var changeDirectionToLTR = {
                 }
             ]
         };
-        var natural_ِEA_timeline = {
+  timeline.push(natural_MSA);
+
+        var natural_ِEA = {
             timeline: [
                 {
                     type: jsPsychHtmlKeyboardResponse,
@@ -408,7 +416,8 @@ var changeDirectionToLTR = {
                 
             ]
         };
-        var natural_ِArabizi_timeline = {
+  timeline.push(natural_EA);
+ var natural_ِArabizi = {
             timeline: [
                 {
                     type: jsPsychHtmlKeyboardResponse,
@@ -488,6 +497,8 @@ var changeDirectionToLTR = {
                 }
             ]
         };
+  timeline.push(natural_Arabizi);
+       
 var startExperiment = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `<p>You're done with the Arabic reading assessment and ready to begin the experiment.</p>
@@ -787,9 +798,9 @@ var experimentTimeline = [
     welcome,
     demographics,
     changeDirectionToLTR,
-    natural_ِMSA_timeline,
-    natural_ِEA_timeline,
-    natural_ِArabizi_timeline,
+    natural_ِMSA,
+    natural_ِEA,
+    natural_ِArabizi,
     startExperiment,
     instructions,
     practice_timeline,  // Include the practice timeline
