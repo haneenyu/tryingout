@@ -215,15 +215,6 @@ var demographics = {
         },
       ]
 },
-    {
-      type: 'jsPsychSurveyMultiSelect',
-      questions: [
-        {
-          prompt: "What Social Media Platforms do you use?",
-          name: 'SocialMediaPlatforms',
-          options: ['Facebook', 'Instagram', 'LinkedIn', 'SnapChat', 'TikTok', 'Twitter', 'Whatsapp', 'YouTube'],
-          required: true
-        }
         // Other questions...
       ]
     }
