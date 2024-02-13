@@ -4352,7 +4352,7 @@ var stimuli_variables =
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
-    
+
   },
   {
     "Target": "b3pha",
