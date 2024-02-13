@@ -3384,11 +3384,7 @@ var stimuli_variables =
     "Word_Validity": "invalid",
     "Target_Word_Length": 4,
     "Target_Gloss": "nonword"
-  }
-]
-
-var Arabizi_stimuli_variables = 
-[
+  },
       {
         "Target": "wayd",
         "Target_Validity": "Valid",
@@ -3492,8 +3488,6 @@ var Arabizi_stimuli_variables =
         "Target_Validity": "Valid",
         "Target_Word_Length": 6,
         "Target_Gloss": "I#will#give#him1",
-        "": "",
-        "__1": "until"
       },
       {
         "Target": "b36ek",
@@ -3668,8 +3662,6 @@ var Arabizi_stimuli_variables =
         "Target_Validity": "Valid",
         "Target_Word_Length": 7,
         "Target_Gloss": "#sifts#you(female)#screens#you(female)",
-        "": "",
-        "__1": "high similarity"
       },
       {
         "Target": "l2ni",
@@ -3997,6 +3989,7 @@ var Arabizi_stimuli_variables =
         "Target_Word_Length": 5,
         "Target_Gloss": "Nonword",
        }, 
+                                                  //ADDED NEW STIMULI
    {
     "Target": "3bali",
     "Word_Validity": "valid",
