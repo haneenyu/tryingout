@@ -82,7 +82,7 @@ function generateRandomCode(length) {
                 "</p>" +
                 "<p>" +
                 "First, you will fill out a short questionnaire. After the " +
-                "questionnaire, we will assess your reading level in Arabic." +
+                "questionnaire, we will assess your reading level in Arabic and English." +
                 "</p>" +
                 "<p>" +
                 "Following this, you will be ready to begin the experiment." +
@@ -416,6 +416,87 @@ var changeDirectionToLTR = {
             ]
         };
   timeline.push(natural_EA);
+var natural_ِEnglish = {
+            timeline: [
+                {
+                    type: jsPsychHtmlKeyboardResponse,
+                    stimulus: `
+                        <div style="font-size: 32px; line-height: 1.5;">
+                            Open your eyes in seawater and it is difficult to see much more than a murky, bleary green color. Sounds, too, are garbled and difficult to comprehend. Without specialized equipment humans would be lost in these deep-sea habitats, so how do fish make it seem so easy? Much of this is due to a biological phenomenon known as electroreception – the ability to perceive and act upon electrical stimuli as part of the overall senses. This ability is only found in aquatic or amphibious species because water is an efficient conductor of electricity.  
+                        </div>
+                        <p style='font-style: italic; font-size: 16px;'>Press enter when done reading.</p>
+                    `,
+                    choices: ['Enter'],
+                    response_ends_trial: true
+                },
+                {
+                    type: jsPsychHtmlButtonResponse,
+                    stimulus: `
+                        <p style='font-size: 24px;'>Is electroception possible underwater?</p>
+                    `,
+                    choices: ['<span style="font-size: 16px;">Yes</span>', '<span style="font-size: 16px;">No</span>'],
+                    correct: 0,
+                    data: {
+                        condition: 'natural reading',
+                        correct_response: 0,
+                    },
+                    on_finish: function (data) {
+                        console.log("Response: ", data.response);
+                        console.log("Correct Response: ", data.correct_response);
+                        // Assuming data.correct_response and data.response are present in your data
+                        data.question_response = data.response === data.correct_response;
+                        data.correct = data.response === data.correct_response;
+                        console.log("Timeline after question_screen:", jsPsych.data.get());
+                    }
+                },
+                {
+                    type: jsPsychHtmlKeyboardResponse,
+                    trial_duration: 1000,
+                    stimulus: function () {
+                        // Check the correctness of the last response
+                        if (jsPsych.data.get().last(1).select('correct').values[0] == true) {
+                            return "<p>Correct!</p>"; // Return the feedback
+                        } else {
+                            return "<p>Incorrect.</p>"; // Return the feedback
+                        }
+                    }
+                },
+                
+                {
+                    type: jsPsychHtmlButtonResponse,
+                    stimulus: `
+                        <p style='font-size: 24px;'>Do humans use electroception to perceive their environment?</p>
+                    `,
+                    choices: ['<span style="font-size: 16px;">Yes</span>', '<span style="font-size: 16px;">No</span>'],
+                    correct: 1,
+                    data: {
+                        condition: 'natural reading',
+                        correct_response: 1,
+                    },
+                    on_finish: function (data) {
+                        console.log("Response: ", data.response);
+                        console.log("Correct Response: ", data.correct_response);
+                        // Assuming data.correct_response and data.response are present in your data
+                        data.question_response = data.response === data.correct_response;
+                        data.correct = data.response === data.correct_response;
+                        console.log("Timeline after question_screen:", jsPsych.data.get());
+                    }
+                },
+                {
+                    type: jsPsychHtmlKeyboardResponse,
+                    trial_duration: 1000,
+                    stimulus: function () { 
+                        // Check the correctness of the last response
+                        if (jsPsych.data.get().last(1).select('correct').values[0] == true) {
+                            return "<p>Correct!</p>"; // Return the feedback
+                        } else {
+                            return "<p>Incorrect.</p>"; // Return the feedback
+                        }
+                    }
+                }
+            ]
+        };
+  timeline.push(natural_English);
  var natural_ِArabizi = {
             timeline: [
                 {
@@ -500,7 +581,7 @@ var changeDirectionToLTR = {
        
 var startExperiment = {
     type: jsPsychHtmlKeyboardResponse,
-    stimulus: `<p>You're done with the Arabic reading assessment and ready to begin the experiment.</p>
+    stimulus: `<p>You're done with the Arabic and English reading assessment and ready to begin the experiment.</p>
              <p>Press any key to read the instructions.</p>`,
 };
 timeline.push(startExperiment);
@@ -511,7 +592,7 @@ timeline.push(startExperiment);
             type: jsPsychHtmlKeyboardResponse,
             stimulus: `
             <p><b>Instructions:</b></p>
-            <p>Each screen will show either an word in <b>Emirati Arabic</b> or letters that do not form a word.</p>
+            <p>Each screen will show either an word in <b> Modern Standard Arabic</b> <b>Emirati Arabic</b> <b>Emirati English (m3rab)</b> <b>English</b> or letters that do not form a word.</p>
             <p>Press <strong>L</strong> if the letters form a valid word.</p>
             <p>Press <strong>A</strong> if the letters do not form a valid word.</p>
             <p>React as fast as you can! Press any key to start the practice round.</p>
@@ -802,6 +883,7 @@ var experimentTimeline = [
     changeDirectionToLTR,
     natural_ِMSA,
     natural_ِEA,
+    natural_English,
     natural_ِArabizi,
     startExperiment,
     instructions,
