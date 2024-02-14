@@ -251,7 +251,7 @@ var changeDirectionToLTR = {
         timeline.push(changeDirectionToLTR);
  
     
-        var natural_ِMSA = {
+        var natural_ِMSA_timeline = {
             timeline: [
                 {
                     type: jsPsychHtmlKeyboardResponse,
@@ -332,9 +332,9 @@ var changeDirectionToLTR = {
                 }
             ]
         };
-  timeline.push(natural_MSA);
+  timeline.push(natural_MSA_timeline);
 
-        var natural_ِEA = {
+        var natural_ِEA_timeline = {
             timeline: [
                 {
                     type: jsPsychHtmlKeyboardResponse,
@@ -415,8 +415,8 @@ var changeDirectionToLTR = {
                 
             ]
         };
-  timeline.push(natural_EA);
-var natural_ِEnglish = {
+  timeline.push(natural_EA_timeline);
+var natural_ِEnglish_timeline = {
             timeline: [
                 {
                     type: jsPsychHtmlKeyboardResponse,
@@ -496,8 +496,8 @@ var natural_ِEnglish = {
                 }
             ]
         };
-  timeline.push(natural_English);
- var natural_ِArabizi = {
+  timeline.push(natural_English_timeline);
+ var natural_ِArabizi_timeline = {
             timeline: [
                 {
                     type: jsPsychHtmlKeyboardResponse,
@@ -577,7 +577,7 @@ var natural_ِEnglish = {
                 }
             ]
         };
-  timeline.push(natural_Arabizi);
+  timeline.push(natural_Arabizi_timeline);
        
 var startExperiment = {
     type: jsPsychHtmlKeyboardResponse,
@@ -881,10 +881,10 @@ var experimentTimeline = [
     welcome,
     demographics,
     changeDirectionToLTR,
-    natural_ِMSA,
-    natural_ِEA,
-    natural_English,
-    natural_ِArabizi,
+    natural_ِMSA_timeline,
+    natural_ِEA_timeline,
+    natural_English_timeline,
+    natural_ِArabizi_timeline,
     startExperiment,
     instructions,
     practice_timeline,  // Include the practice timeline
