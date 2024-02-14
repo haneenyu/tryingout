@@ -9,12 +9,12 @@ const jsPsych = initJsPsych({
 
 // Define the total number of stimuli
 const totalStimuli = stimuli_variables.length;
-const numRandomTrials = 30;
+const numRandomTrials = 20;
 const practiceStimuli = jsPsych.randomization.sampleWithoutReplacement(stimuli_variables, numRandomTrials);
-//const numExperimentTrials = 270;
+const numExperimentTrials = 180;
 const remainingStimuli = stimuli_variables.filter(stimulus => !practiceStimuli.includes(stimulus));
-const experimentStimuli = jsPsych.randomization.sampleWithoutReplacement(remainingStimuli);
-// ADD numEXp.. , 
+const experimentStimuli = jsPsych.randomization.sampleWithoutReplacement(remainingStimuli, numExperimentTrials);
+
 
 //create timeline
 var timeline = [];
