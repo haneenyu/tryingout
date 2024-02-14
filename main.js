@@ -738,16 +738,18 @@ var chunk_debrief_block = {
 // Create a timeline with a single trial displaying the completion code
 // Create a timeline with a single trial displaying the completion code
 const completionCodeTrial = {
-  type: jsPsychHtmlKeyboardResponse,
+  type: 'jsPsychHtmlKeyboardResponse',
   stimulus: function () {
-    return `<p>Your completion code is: <b>${randomCode}</b>.</p> Please copy the completion code and paste it in this survey: https://nyu.qualtrics.com/jfe/form/SV_cACibHCfBNEGCsC to receive your payment. </p> 
-    </p> If you are facing any difficulty in receiving payment please email ha1648@nyu.edu </p>
-    <p>When you're done, press the spacebar to exit.</p`;
+    return `<p>Your completion code is: <b>${randomCode}</b>.</p>
+    <p>Please copy the completion code and paste it in this survey:</p>
+    <a href="https://nyu.qualtrics.com/jfe/form/SV_cACibHCfBNEGCsC" target="_blank">Survey</a> to receive your payment.
+    </p>
+    <p>If you are facing any difficulty in receiving payment, please email ha1648@nyu.edu</p>
+    <p>When you're done, press the spacebar to exit.</p>`;
   },
   choices: ['space'],
   response_ends_trial: true,
 };
-
 var main_procedure = {
     timeline: [
         fixation, 
