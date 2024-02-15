@@ -831,6 +831,7 @@ const completionCodeTrial = {
   choices: ['space'],
   response_ends_trial: true,
 };
+timeline.push(completionCodeTrial);
 var main_procedure = {
     timeline: [
         fixation, 
