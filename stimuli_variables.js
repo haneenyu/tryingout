@@ -2375,10 +2375,10 @@ var stimuli_variables =
     
   },
   {
-    "Target": "ييلسن",
+    "Target": "دريشة",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "They(female)#sit",
+    "Target_Gloss": "window",
     
   },
   {
@@ -2508,7 +2508,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "اوطيه",
+    "Target": "ارطيه",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
