@@ -184,10 +184,10 @@ var stimuli_variables =
     
   },
   {
-    "Target": "umayh",
+    "Target": "bndsh",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "My#mother2",
+    "Target_Gloss": "we#will#enter",
     
   },
   {
