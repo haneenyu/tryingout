@@ -198,24 +198,24 @@ var stimuli_variables =
     
   },
   {
-    "Target": "33mry",
+    "Target": "3ndch",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "on#my#life#on#my#age",
+    "Target_Gloss": "you(female)#have",
     
   },
   {
-    "Target": "2yles",
+    "Target": "8reeb",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "I#sit",
+    "Target_Gloss": "close#soon",
     
   },
   {
-    "Target": "yelsn",
+    "Target": "ychof",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "They(female)#sit",
+    "Target_Gloss": "he#sees",
     
   },
   {
@@ -233,10 +233,10 @@ var stimuli_variables =
     
   },
   {
-    "Target": "28olk",
+    "Target": "28ool",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "#I#tell#you(male)",
+    "Target_Gloss": "#I#say",
     
   },
   {
@@ -303,10 +303,10 @@ var stimuli_variables =
     
   },
   {
-    "Target": "3krsy",
+    "Target": "3yayz",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "on#a#chair",
+    "Target_Gloss": "old#women",
     
   },
   {
@@ -394,7 +394,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "dazak",
+    "Target": "dalak",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -506,42 +506,42 @@ var stimuli_variables =
     
   },
   {
-    "Target": "deyak",
+    "Target": "leyak",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "dyach",
+    "Target": "pyach",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "dyakm",
+    "Target": "lyakm",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "dyahm",
+    "Target": "lyahm",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "dyaha",
+    "Target": "lyaha",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "deyah",
+    "Target": "peyah",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -576,7 +576,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "86ach",
+    "Target": "87ach",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -590,7 +590,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "7gait",
+    "Target": "7pait",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -625,7 +625,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "2nayh",
+    "Target": "6nayh",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -744,7 +744,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "ترارة",
+    "Target": "ثرارة",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -1045,10 +1045,10 @@ var stimuli_variables =
     
   },
   {
-    "Target": "طائبة",
+    "Target": "طالبة",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "unobjectionable",
+    "Target_Gloss": "female#student",
     
   },
   {
@@ -1073,17 +1073,17 @@ var stimuli_variables =
     
   },
   {
-    "Target": "طائحة",
+    "Target": "مسالم",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "adversities;fate",
+    "Target_Gloss": "peaceful",
     
   },
   {
-    "Target": "نائحة",
+    "Target": "مقاوم",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "hired_female_mourner",
+    "Target_Gloss": "resistor",
     
   },
   {
@@ -1136,17 +1136,17 @@ var stimuli_variables =
     
   },
   {
-    "Target": "نائرة",
+    "Target":  "أبقار",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "hatred;flame_of_war",
+    "Target_Gloss": "cows",
     
   },
   {
-    "Target": "فائرة",
+    "Target": "فئران",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "fit_of_anger;flare-up",
+    "Target_Gloss": "mice",
     
   },
   {
@@ -1164,31 +1164,31 @@ var stimuli_variables =
     
   },
   {
-    "Target": "حائري",
+    "Target": "أعذار",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "Haeri;Hairi",
+    "Target_Gloss": "excuses",
     
   },
   {
-    "Target": "حائطي",
+    "Target": "حليبي",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "wall",
+    "Target_Gloss": "milky",
     
   },
   {
-    "Target": "غائطي",
+    "Target": "حسناء",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "fecal",
+    "Target_Gloss": "beauty#female",
     
   },
   {
-    "Target": "بائقة",
+    "Target": "بائعة",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "misfortunes",
+    "Target_Gloss": "seller#female",
     
   },
   {
@@ -1213,31 +1213,31 @@ var stimuli_variables =
     
   },
   {
-    "Target": "غائلة",
+    "Target": "عجائب",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "calamities;havoc#calamity;havoc",
+    "Target_Gloss": "wonders",
     
   },
   {
-    "Target": "طائلة",
+    "Target": "طاولة",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "threat",
+    "Target_Gloss": "table",
     
   },
   {
-    "Target": "نائلة",
+    "Target": "ناقلة",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "Na'ila",
+    "Target_Gloss": "transporter",
     
   },
   {
-    "Target": "صائلة",
+    "Target": "صامدة",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "violence#hostile_acts#hostile_act",
+    "Target_Gloss": "steadfast",
     
   },
   {
@@ -1276,17 +1276,17 @@ var stimuli_variables =
     
   },
   {
-    "Target": "رائية",
+    "Target": "أراضي",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "view_finder",
+    "Target_Gloss": "lands,
     
   },
   {
-    "Target": "غائية",
+    "Target": "كاتبة",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "finality",
+    "Target_Gloss": "writer#female",
     
   },
   {
@@ -1297,17 +1297,17 @@ var stimuli_variables =
     
   },
   {
-    "Target": "زائير",
+    "Target": "زلزلة",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "Zaire",
+    "Target_Gloss": "earthquake",
     
   },
   {
-    "Target": "مائير",
+    "Target": "ماعون",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "Meir",
+    "Target_Gloss": "household#items",
     
   },
   {
@@ -1549,7 +1549,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "sitel",
+    "Target": "sipel",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -1570,14 +1570,14 @@ var stimuli_variables =
     
   },
   {
-    "Target": "frils",
+    "Target": "frips",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "tapis",
+    "Target": "tazis",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -1689,7 +1689,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "jeads",
+    "Target": "jeeds",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -2081,11 +2081,11 @@ var stimuli_variables =
     
   },
   {
-    "Target": "",
-    "Word_Validity": "",
-    "Target_Word_Length": "",
-    "Target_Gloss": "",
-    "Language": ""
+    "Target": "انطمي",
+    "Word_Validity": "valid",
+    "Target_Word_Length": "5",
+    "Target_Gloss": "be#quiet(female)",
+   
   },
   {
     "Target": "انطمي",
@@ -2095,10 +2095,10 @@ var stimuli_variables =
     
   },
   {
-    "Target": "هايات",
+    "Target": "ارمسو",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "helllos#hi's1",
+    "Target_Gloss": "speak#up",
     
   },
   {
@@ -2165,10 +2165,10 @@ var stimuli_variables =
     
   },
   {
-    "Target": "براسي",
+    "Target": "شراتج",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "with#my#head",
+    "Target_Gloss": "like#you#female",
     
   },
   {
@@ -2193,10 +2193,10 @@ var stimuli_variables =
     
   },
   {
-    "Target": "عقلبه",
+    "Target": "عيبني",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "on#his#heart",
+    "Target_Gloss": "i#liked#it",
     
   },
   {
@@ -2228,10 +2228,10 @@ var stimuli_variables =
     
   },
   {
-    "Target": "جتفها",
+    "Target": "جفتها",
     "Word_Validity": "valid",
     "Target_Word_Length": 5,
-    "Target_Gloss": "her#shoulder",
+    "Target_Gloss": "i#saw#her"
     
   },
   {
