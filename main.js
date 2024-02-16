@@ -503,7 +503,7 @@ var natural_ِEnglish_timeline = {
                     type: jsPsychHtmlKeyboardResponse,
                     stimulus: `
                         <div style="font-size: 32px; line-height: 1.5;">
-                            4ahrt Noura mn elbait w 3la malam7ha 2btisama hadiya jamila. Sho 27la mn elwa7d y96b7 bwayh el3’la klh w nab3 el7anan w el7b klh “elwaldah” 7ta lw ykon el2nsan mtkadr w mt9’ayj w yshof halwyooh elsim7ah mn 9aba7 Allah 5air t3’yer elmazaj 180 darajah. rkbat sayaratha elCamry w rb3at Messy elbshkarah tft7 lha elbab el3od. 8abl ma t7arik sayaratha sh3’alat el radio 3la 24a3at el8raan, tsm3 eld3a2 eli kl youm y76oonh f halwa8t w hyi tlbas n8abha. Kan el jaw barid elyoum zyadh 3n 2ms. W 6b3an 2l7een fi bdayat elshita elshar3 bad2 yzda7m blsyayeer, ellkl raye7 sh3’lh shrat Noura. W kl3adah Noura 2wwal el wa9leen ll6b elwa8a2ee “mkan sh3’lha”.  9ar lha tsht3’l f halmkan sntain.Y3ni mb jdeema wayed. y3tbrooha ydeedah. L2nh m36’m el7areem eli wyaha 9ar lhn 3mr fi el6b elwa8a2ee… 2ydad 7ad feeh Noura w 27mad eli 9ar lh ysht3’l 3 sanawat. 2wwal ma d5lat elmabna 8arrat tro7 el6ab8 el2wwal bldaray l2nha elyoum t7s bnasha6. f 6nsht el lift w rkbat el daray.  
+                            4ahrt Noura mn elbait w 3la malam7ha 2btisama hadiya jamila. Sho 27la mn elwa7d y96b7 bwayh el3’la klh w nab3 el7anan w el7b klh “elwaldah” 7ta lw ykon el2nsan mtkadr w mt9’ayj w yshof halwyooh elsim7ah mn 9aba7 Allah 5air t3’yer elmazaj 180 darajah. rkbat sayaratha el Camry w rb3at elbshkarah tft7 lha elbab el3od. 8abl ma t7arik sayaratha sh3’alat el radio 3la 24a3at el8raan, tsm3 eld3a2 eli kl youm y76oonh f halwa8t w hyi tlbas n8abha. Kan el jaw barid elyoum zyadh 3n 2ms. W 6b3an 2l7een fi bdayat elshita elshar3 bad2 yzda7m blsyayeer, ellkl raye7 sh3’lh shrat Noura.   
                         </div>
                         <p style='font-style: italic; font-size: 16px;'>Press enter when done reading.</p>
                     `,
@@ -546,7 +546,7 @@ var natural_ِEnglish_timeline = {
                 {
                     type: jsPsychHtmlButtonResponse,
                     stimulus: `
-                        <p style='font-size: 24px;'>Hal Noura tdawm fi el6b alwa8a2ee?</p>
+                        <p style='font-size: 24px;'>Hal Noura t7b tchof 2mha?</p>
                     `,
                     choices: ['<span style="font-size: 16px;">Haih</span>', '<span style="font-size: 16px;">La</span>'],
                     correct: 0,
