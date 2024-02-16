@@ -2515,7 +2515,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "نراسي",
+    "Target": "ثراسي",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -2543,7 +2543,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "عفلها",
+    "Target": "عشلها",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -2557,28 +2557,28 @@ var stimuli_variables =
     
   },
   {
-    "Target": "وماكم",
+    "Target": "زماكم",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "وماهم",
+    "Target": "زماهم",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "وماها",
+    "Target": "زماها",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "ختفها",
+    "Target": "خثفها",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -2613,7 +2613,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "افلين",
+    "Target": "اغلين",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -2627,14 +2627,14 @@ var stimuli_variables =
     
   },
   {
-    "Target": "بيونك",
+    "Target": "بثونك",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "بيونج",
+    "Target": "بثونج",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -2662,7 +2662,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "كخشتي",
+    "Target": "كخشتو",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -2676,7 +2676,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "جواتج",
+    "Target": "حواتج",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -2690,7 +2690,7 @@ var stimuli_variables =
     
   },
   {
-    "Target": "انايه",
+    "Target": "اثايه",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
@@ -2739,35 +2739,35 @@ var stimuli_variables =
     
   },
   {
-    "Target": "افولج",
+    "Target": "اضولج",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "افولك",
+    "Target": "اضولك",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "يفولج",
+    "Target": "يضولج",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "تقولج",
+    "Target": "تضولج",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
     
   },
   {
-    "Target": "يفولج",
+    "Target": "يضولج",
     "Word_Validity": "invalid",
     "Target_Word_Length": 5,
     "Target_Gloss": "nonword",
