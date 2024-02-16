@@ -592,7 +592,7 @@ timeline.push(startExperiment);
             type: jsPsychHtmlKeyboardResponse,
             stimulus: `
             <p><b>Instructions:</b></p>
-            <p>Each screen will show either an word in <b> Modern Standard Arabic</b> <b>Emirati Arabic</b> <b>Emirati English (m3rab)</b> <b>English</b> or letters that do not form a word.</p>
+            <p>Each screen will show either an word in <b> Modern Standard Arabic,</b> <b>Emirati Arabic,</b> <b>Emirati English (m3rab),</b> <b> and English</b> or letters that do not form a word.</p>
             <p>Press <strong>L</strong> if the letters form a valid word.</p>
             <p>Press <strong>A</strong> if the letters do not form a valid word.</p>
             <p>React as fast as you can! Press any key to start the practice round.</p>
