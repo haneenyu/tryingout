@@ -818,7 +818,7 @@ var chunk_debrief_block = {
 
 // Create a timeline with a single trial displaying the completion code
 // Create a timeline with a single trial displaying the completion code
-const completionCodeTrial = {
+var completionCodeTrial = {
   type: 'jsPsychHtmlKeyboardResponse',
   stimulus: function () {
     return `<p>Your completion code is: <b>${randomCode}</b>.</p>
