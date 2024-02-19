@@ -11,7 +11,7 @@ const jsPsych = initJsPsych({
 const totalStimuli = stimuli_variables.length;
 const numRandomTrials = 20;
 const practiceStimuli = jsPsych.randomization.sampleWithoutReplacement(stimuli_variables, numRandomTrials);
-const numExperimentTrials = 180;
+const numExperimentTrials = 280;
 const remainingStimuli = stimuli_variables.filter(stimulus => !practiceStimuli.includes(stimulus));
 const experimentStimuli = jsPsych.randomization.sampleWithoutReplacement(remainingStimuli, numExperimentTrials);
 
