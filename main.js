@@ -832,7 +832,7 @@ const completionCodeTrial = {
   stimulus: function () {
     return `<p>Your completion code is: <b>${randomCode}</b>.</p> <p>Please copy the completion code and paste it in this survey:</p><p><a href="https://nyu.qualtrics.com/jfe/form/SV_cACibHCfBNEGCsC" target="_blank">Survey</a></p><p>If you are facing any difficulty in receiving payment, please email ha1648@nyu.edu</p><p>When you're done, press the spacebar to exit.</p>`;
   },
-  choices: ['Enter'],
+  choices: ['Enter''Spacebar''Escape'],
   response_ends_trial: true,
 };
 
@@ -899,8 +899,8 @@ var experimentTimeline = [
     enter_fullscreen,
     consent,
     welcome,
-    demographics,
     completionCodeTrial,
+    demographics,
     changeDirectionToLTR,
     natural_ِMSA_timeline,
     natural_ِEA_timeline,
