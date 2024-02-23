@@ -4,6 +4,7 @@ const jsPsych = initJsPsych({
     //display data at the end of the experiment
     on_finish: function() {
         jsPsych.data.displayData();
+        jspsych.data.get().csv();
     }
 });
 
