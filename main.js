@@ -658,7 +658,11 @@ var response_alternatives = {
                 trial_duration: 5000,
                 data: {
                     task: 'response',
-                    correct_word_validity: jsPsych.timelineVariable('Word_Validity')
+                    correct_word_validity: jsPsych.timelineVariable('Word_Validity'),
+                    target:jsPsych.timelineVariable('Target'),
+                    word_validity:jsPsych.timelineVariable('Word_Validity'),
+                    target_word_length:jsPsych.timelineVariable('Target_Word_Length'),
+                    target_gloss: jsPsych.timelineVariable('Target_Gloss')
                 },
                 on_finish: function (data) {
                     console.log("Response: ", data.response);
