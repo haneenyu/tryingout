@@ -783,7 +783,9 @@ var separatorMessage = {
 var endMessage = {                                                                        
   type: jsPsychHtmlKeyboardResponse,
   stimulus: `<p>You're done with the experiment.</p>
-               <p>Press any key to exit.</p>`,
+               <p>Press space to exit.</p>`,
+            choices: ['Spacebar'],
+  response_ends_trial: true,
       trial_duration: 3000,
 };
 
@@ -830,7 +832,7 @@ const completionCodeTrial = {
     </p> If you are facing any difficulty in receiving payment please email ha1648@nyu.edu </p>
     <p>When you're done, press the spacebar to exit.</p`;
   },
-  choices: ['space'],
+  choices: ['Spacebar','Enter','Escape'],
   response_ends_trial: true,
 };
 //var completionCodeTrial = {
