@@ -780,14 +780,14 @@ var separatorMessage = {
         <p>Press any key to start the main experiment.</p>`,
 };
 
-var endMessage = {                                                                        
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: `<p>You're done with the experiment.</p>
-               <p>Press space to exit.</p>`,
-            choices: ['Spacebar'],
-  response_ends_trial: true,
-      trial_duration: 3000,
-};
+//var endMessage = {                                                                        
+  //type: jsPsychHtmlKeyboardResponse,
+ // stimulus: `<p>You're done with the experiment.</p>
+          //     <p>Press space to exit.</p>`,
+         //   choices: ['Spacebar'],
+  //response_ends_trial: true,
+     // trial_duration: 3000,
+//};
 
 
 var chunk_debrief_block = {
@@ -913,8 +913,6 @@ var experimentTimeline = [
     separatorMessage,
     main_procedure,
     debrief_block,
-    
-    endMessage,
     pavlovia_finish
     ];
 
