@@ -503,8 +503,8 @@ var natural_ِEnglish_timeline = {
                 {
                     type: jsPsychHtmlKeyboardResponse,
                     stimulus: `
-                        <div style="font-size: 32px; line-height: 1.5;">
-                            4ahrt Noura mn elbait w 3la malam7ha 2btisama hadiya jamila. Sho 27la mn elwa7d y96b7 bwayh el3’la klh w nab3 el7anan w el7b klh “elwaldah” 7ta lw ykon el2nsan mtkadr w mt9’ayj w yshof halwyooh elsim7ah mn 9aba7 Allah 5air t3’yer elmazaj 180 darajah. rkbat sayaratha el Camry w rb3at elbshkarah tft7 lha elbab el3od. 8abl ma t7arik sayaratha sh3’alat el radio 3la 24a3at el8raan, tsm3 eld3a2 eli kl youm y76oonh f halwa8t w hyi tlbas n8abha. Kan el jaw barid elyoum zyadh 3n 2ms. W 6b3an 2l7een fi bdayat elshita elshar3 bad2 yzda7m blsyayeer, ellkl raye7 sh3’lh shrat Noura.   
+                       <div style="font-size: 32px; line-height: 1.5;">
+                            4hrt Noura mn elbait w 3la mlam7ha ebtisamah hadiya jamila. Sho 27la mn elwa7d y96b7 bwayh el3’la klh w nb3 el7nan w el7b klh “elwaldah” 7ta lw ykon el2nsan mtkdr w mt9’ayj w yshof hl wyooh elsim7ah mn 9aba7 Allah 5air t3’yer elmazaj 180 darajah. rkbat sayarat'ha el Camry w rb3at elbshkarah tft7lha elbab el3od. 8bl ma t7arik sayarat'ha sh3’alat el radio 3la e4a3at el8ra'an, tsm3 eld3a2 eli kl youm y76oonh f hal wagt w hyi tlbas n8abha. Kan el jaw barid elyoum zyadah 3n 2ms. W 6b3an 2l7een fi bdayat elshita elshar3 bd2 yzd7m blsyayeer, el kl raye7 sh3’lh shrat Noura.
                         </div>
                         <p style='font-style: italic; font-size: 16px;'>Press enter when done reading.</p>
                     `,
@@ -830,7 +830,7 @@ var chunk_debrief_block = {
 const completionCodeTrial = {
   type: jsPsychHtmlKeyboardResponse,
   stimulus: function () {
-    return `<p>Your completion code is: <b>${randomCode}</b>.</p> <p>Please copy the completion code and paste it in this survey:</p><p><a href="https://nyu.qualtrics.com/jfe/form/SV_cACibHCfBNEGCsC" target="_blank">Survey</a></p><p>If you are facing any difficulty in receiving payment, please email ha1648@nyu.edu</p><p>When you're done, press Enter to exit.</p>`;
+    return `<p>Your completion code is: <b>${randomCode}</b>.</p> <p>Please copy the completion code and paste it in this survey:</p><p><a href="https://nyu.qualtrics.com/jfe/form/SV_cACibHCfBNEGCsC" target="_blank">Survey</a></p><p>If you are facing any difficulty in receiving payment, please email ha1648@nyu.edu</p><p>When you're done, press Enter to receive the results .</p>`;
   },
   choices: ['Enter'],
   response_ends_trial: true,
