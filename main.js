@@ -4,7 +4,7 @@ const jsPsych = initJsPsych({
     //display data at the end of the experiment
     on_finish: function() {
         jsPsych.data.displayData();
-        jspsych.data.get().csv();
+         jspsych.data.get().csv();
     }
 });
 
@@ -275,6 +275,7 @@ var changeDirectionToLTR = {
                     data: {
                         condition: 'natural reading',
                         correct_response: 1,
+
                     },
                     on_finish: function (data) {
                         console.log("Response: ", data.response);
@@ -333,7 +334,7 @@ var changeDirectionToLTR = {
                 }
             ]
         };
-  timeline.push(natural_MSA_timeline);
+  timeline.push(natural_ِMSA_timeline);
 
         var natural_ِEA_timeline = {
             timeline: [
@@ -416,8 +417,10 @@ var changeDirectionToLTR = {
                 
             ]
         };
-  timeline.push(natural_EA_timeline);
-var natural_ِEnglish_timeline = {
+
+  timeline.push(natural_ِEA_timeline);
+
+  var natural_ِEnglish_timeline = {
             timeline: [
                 {
                     type: jsPsychHtmlKeyboardResponse,
@@ -497,13 +500,14 @@ var natural_ِEnglish_timeline = {
                 }
             ]
         };
-  timeline.push(natural_English_timeline);
+  timeline.push(natural_ِEnglish_timeline);
+
  var natural_ِArabizi_timeline = {
             timeline: [
                 {
                     type: jsPsychHtmlKeyboardResponse,
                     stimulus: `
-                       <div style="font-size: 32px; line-height: 1.5;">
+                        <div style="font-size: 32px; line-height: 1.5;">
                             4hrt Noura mn elbait w 3la mlam7ha ebtisamah hadiya jamila. Sho 27la mn elwa7d y96b7 bwayh el3’la klh w nb3 el7nan w el7b klh “elwaldah” 7ta lw ykon el2nsan mtkdr w mt9’ayj w yshof hl wyooh elsim7ah mn 9aba7 Allah 5air t3’yer elmazaj 180 darajah. rkbat sayarat'ha el Camry w rb3at elbshkarah tft7lha elbab el3od. 8bl ma t7arik sayarat'ha sh3’alat el radio 3la e4a3at el8ra'an, tsm3 eld3a2 eli kl youm y76oonh f hal wagt w hyi tlbas n8abha. Kan el jaw barid elyoum zyadah 3n 2ms. W 6b3an 2l7een fi bdayat elshita elshar3 bd2 yzd7m blsyayeer, el kl raye7 sh3’lh shrat Noura.
                         </div>
                         <p style='font-style: italic; font-size: 16px;'>Press enter when done reading.</p>
@@ -578,7 +582,7 @@ var natural_ِEnglish_timeline = {
                 }
             ]
         };
-  timeline.push(natural_Arabizi_timeline);
+  timeline.push(natural_ِArabizi_timeline);
        
 var startExperiment = {
     type: jsPsychHtmlKeyboardResponse,
@@ -780,13 +784,12 @@ var separatorMessage = {
         <p>Press any key to start the main experiment.</p>`,
 };
 
-//var endMessage = {                                                                        
-  //type: jsPsychHtmlKeyboardResponse,
- // stimulus: `<p>You're done with the experiment.</p>
-          //     <p>Press space to exit.</p>`,
-         //   choices: ['Spacebar'],
+//var endMessage = {
+  //ype: jsPsychHtmlKeyboardResponse,
+ //stimulus: `<p>You're done with the experiment.</p>
+       // choices: ['Spacebar'],
   //response_ends_trial: true,
-     // trial_duration: 3000,
+    //trial_duration: 3000,
 //};
 
 
@@ -809,23 +812,19 @@ var chunk_debrief_block = {
             }
         }
 
-        var chunk_accuracy = Math.round((correct_count / chunk_trials.count()) * 50);
+        var chunk_accuracy = Math.round((correct_count / chunk_trials.count()) * 100);
 
         // Calculate average response time for all trials in the current chunk
         var chunk_rt = Math.round(chunk_trials.select('rt').mean());
 
         // Get the block number, considering the practice trials
-        var block_number = (Math.ceil(jsPsych.data.get().filter({ task: 'response' }).count() / 50));
+        var block_number = (Math.ceil(jsPsych.data.get().filter({ task: 'response' }).count() / 100));
 
         return `<p><b>Block accuracy:</b> ${chunk_accuracy}%.</p>
                 <p><b>Average response time for the last 50 trials:</b> ${chunk_rt}ms.</p>
                 <p>Press any key to continue.</p>`;
     },
 };
-
-// Create a timeline with a single trial displaying the completion code
-// Create a timeline with a single trial displaying the completion code
-// Create a timeline with a single trial displaying the completion code
 
 const completionCodeTrial = {
   type: jsPsychHtmlKeyboardResponse,
@@ -836,21 +835,24 @@ const completionCodeTrial = {
   response_ends_trial: true,
 };
 
+
+
 //var completionCodeTrial = {
- // type: 'jsPsychHtmlKeyboardResponse',
- // stimulus: function () {
-  //  return `<p>Your completion code is: <b>${randomCode}</b>.</p>
-  //  <p>Please copy the completion code and paste it in this survey:</p>
-   // <a href="https://nyu.qualtrics.com/jfe/form/SV_cACibHCfBNEGCsC" target="_blank">Survey</a> to receive your payment.
-  //  </p>
- //   <p>If you are facing any difficulty in receiving payment, please email ha1648@nyu.edu</p>
-  //  <p>When you're done, press the spacebar to exit.</p>`;
+  //type: 'jsPsychHtmlKeyboardResponse',
+  //stimulus: function () {
+   // return `<p>Your completion code is: <b>${randomCode}</b>.</p>
+    //<p>Please copy the completion code and paste it in this survey:</p>
+  //  <a href="https://nyu.qualtrics.com/jfe/form/SV_cACibHCfBNEGCsC" target="_blank">Survey</a> to receive your payment.
+    //</p>
+   // <p>If you are facing any difficulty in receiving payment, please email ha1648@nyu.edu</p>
+   // <p>When you're done, press the spacebar to exit.</p>`;
  // },
-  //choices: ['space'],
+ // choices: ['space'],
   //response_ends_trial: true,
- // trial_duration: 60000
+  //trial_duration: 60000
 //};
-//timeline.push(completionCodeTrial);
+  //timeline.push(completionCodeTrial);
+
 var main_procedure = {
     timeline: [
         fixation, 
@@ -903,7 +905,7 @@ var experimentTimeline = [
     changeDirectionToLTR,
     natural_ِMSA_timeline,
     natural_ِEA_timeline,
-    natural_English_timeline,
+    natural_ِEnglish_timeline,
     natural_ِArabizi_timeline,
     startExperiment,
     instructions,
