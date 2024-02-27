@@ -872,6 +872,22 @@ var main_procedure = {
     randomize_order: true,
     repetitions: 1, // Run through all  trials once
 };
+
+//Michele Suggestion
+        var final_download = {
+            type: "html-keyboard-response",
+            stimulus: "<p>Thank you for your participation</p>" + "<button onclick='download_data()'>Download Results</button>",
+            choices: ["space", ' '],
+            on_start: function() {
+                var data2download = jsPsych.data.get().csv();
+                var hiddenElement = document.createElement('a');
+                hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(data2download);
+                hiddenElement.target = '_blank';
+                hiddenElement.download = 'myData.csv';
+                hiddenElement.click();
+            }
+        };
+        timeline.push(final_download)
 /* finish connection with pavlovia.org */
 var pavlovia_finish = {
     type: jsPsychPavlovia,
@@ -914,6 +930,7 @@ var experimentTimeline = [
     separatorMessage,
     main_procedure,
     debrief_block,
+    final_download,
     completionCodeTrial,
     pavlovia_finish
     ];
