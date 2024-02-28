@@ -1,10 +1,21 @@
 //initialize jspsych
+//const jsPsych = initJsPsych({
+   // fullscreen: true,
+    //display data at the end of the experiment
+   // on_finish: function() {
+        //jsPsych.data.displayData();
+        // jspsych.data.get().csv();
+  //  }
+//});
+// ANI EMAIL
+
+//initialize jspsych
 const jsPsych = initJsPsych({
     fullscreen: true,
     //display data at the end of the experiment
     on_finish: function() {
         jsPsych.data.displayData();
-         jspsych.data.get().csv();
+        jsPsych.data.get().csv();
     }
 });
 
@@ -890,27 +901,48 @@ var main_procedure = {
      //   timeline.push(final_download)
 
                                         // PAVLOVIA FINISH ANI EDITION
+// ORIGINAL I THINK
+//var pavlovia_finish = {
+  //  type: jsPsychPavlovia,
+   // command: "finish",
+   // participantId: "JSPSYCH-DEMO",
+    // Thomas Pronk; your filter function here
+   // dataFilter: function(data) {
+      // Printing the data received from jsPsych.data.get().csv(); a CSV data structure
+    //  console.log(data);
+      // You can also access the data directly, for instance getting it as JSON
+    //  console.log(jsPsych.data.get().json());
+      // Return whatever data you'd like to store
+    //  return data;
+  //  },
+    // Thomas Pronk; call this function when we're done with the experiment and data reception has been confirmed by Pavlovia
+   // completedCallback: function() {
+   // alert('data successfully submitted!');
+   // }
+ // };
+
+ // timeline.push(pavlovia_finish);
 
 var pavlovia_finish = {
     type: jsPsychPavlovia,
     command: "finish",
     participantId: "JSPSYCH-DEMO",
-    // Thomas Pronk; your filter function here
+    // Modify the dataFilter function to get CSV data
     dataFilter: function(data) {
-      // Printing the data received from jsPsych.data.get().csv(); a CSV data structure
-      console.log(data);
-      // You can also access the data directly, for instance getting it as JSON
-      console.log(jsPsych.data.get().json());
-      // Return whatever data you'd like to store
-      return data;
+        // Printing the data received from jsPsych.data.get().csv(); a CSV data structure
+        var csvData = jsPsych.data.get().csv();
+        console.log(csvData);
+        
+        // Return the CSV data
+        return csvData;
     },
     // Thomas Pronk; call this function when we're done with the experiment and data reception has been confirmed by Pavlovia
     completedCallback: function() {
-      alert('data successfully submitted!');
+        alert('data successfully submitted!');
     }
-  };
+};
 
-  timeline.push(pavlovia_finish);
+timeline.push(pavlovia_finish);
 
 
 // Define the full timeline
