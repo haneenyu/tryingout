@@ -833,6 +833,7 @@ const completionCodeTrial = {
   },
   choices: ['Enter'],
   response_ends_trial: true,
+  trial_duration: 60000
 };
 
 
@@ -872,46 +873,24 @@ var main_procedure = {
     randomize_order: true,
     repetitions: 1, // Run through all  trials once
 };
-
-                                                            //Michele Suggestion
-    //    var final_download = {
-      //      type: "html-keyboard-response",
-       //     stimulus: "<p>Thank you for your participation</p>" + "<button onclick='download_data()'>Download Results</button>",
-        //    choices: ["space", ' '],
-        //    on_start: function() {
-         //       var data2download = jsPsych.data.get().csv();
-         //       var hiddenElement = document.createElement('a');
-         //       hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(data2download);
-         //       hiddenElement.target = '_blank';
-          //      hiddenElement.download = 'myData.csv';
-          //      hiddenElement.click();
-        //    }
+                                                                                //Michele Suggestion
+      //  var final_download = {
+          //  type: "html-keyboard-response",
+          //  stimulus: "<p>Thank you for your participation</p>" + "<button onclick='download_data()'>Download Results</button>",
+           // choices: ["space", ' '],
+           // on_start: function() {
+           //     var data2download = jsPsych.data.get().csv();
+            //    var hiddenElement = document.createElement('a');
+            //    hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(data2download);
+            //    hiddenElement.target = '_blank';
+             //   hiddenElement.download = 'myData.csv';
+              //  hiddenElement.click();
+           // }
       //  };
-     //  timeline.push(final_download)
-// PAVLOVIA FINISH ANI EDITION
+     //   timeline.push(final_download)
 
-//var pavlovia_finish = {
-//    type: jsPsychPavlovia,
- //   command: "finish",
- //   participantId: "JSPSYCH-DEMO",
-    // Thomas Pronk; your filter function here
-//    dataFilter: function(data) {
-      // Printing the data received from jsPsych.data.get().csv(); a CSV data structure
-//      var csvData = jsPsych.data.get().csv();
-//     console.log(csvData);
-      // You can also access the data directly, for instance getting it as JSON
- //     console.log(jsPsych.data.get().json());
-      // Return whatever data you'd like to store
- //     return csvData;
- //   },
-    // Thomas Pronk; call this function when we're done with the experiment and data reception has been confirmed by Pavlovia
-  //  completedCallback: function() {
-   //   alert('data successfully submitted!');
- //   }
-//  };
+                                        // PAVLOVIA FINISH ANI EDITION
 
- // timeline.push(pavlovia_finish);
-/* finish connection with pavlovia.org */
 var pavlovia_finish = {
     type: jsPsychPavlovia,
     command: "finish",
@@ -919,7 +898,7 @@ var pavlovia_finish = {
     // Thomas Pronk; your filter function here
     dataFilter: function(data) {
       // Printing the data received from jsPsych.data.get().csv(); a CSV data structure
-     console.log(data);
+      console.log(data);
       // You can also access the data directly, for instance getting it as JSON
       console.log(jsPsych.data.get().json());
       // Return whatever data you'd like to store
@@ -927,7 +906,7 @@ var pavlovia_finish = {
     },
     // Thomas Pronk; call this function when we're done with the experiment and data reception has been confirmed by Pavlovia
     completedCallback: function() {
-     alert('data successfully submitted!');
+      alert('data successfully submitted!');
     }
   };
 
@@ -962,3 +941,4 @@ console.log(version);
 
 // Start the experiment
 jsPsych.run(experimentTimeline);
+
