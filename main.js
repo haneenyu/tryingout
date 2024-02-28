@@ -46,11 +46,11 @@ var enter_fullscreen = {
   }
   timeline.push(enter_fullscreen);
 
-var trial = {
-    type: jsPsychVirtualChinrest,
-    blindspot_reps: 3,
-    resize_units: "none"
-};
+//var trial = {
+  //  type: jsPsychVirtualChinrest,
+   // blindspot_reps: 3,
+  //  resize_units: "none"
+//};
 
 const randomCode = generateRandomCode(5); // Change to the desired code length
 
