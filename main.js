@@ -7,18 +7,22 @@
         // jspsych.data.get().csv();
   //  }
 //});
-// ANI EMAIL
-
-//initialize jspsych
-const jsPsych = initJsPsych({
-    fullscreen: true,
-    //display data at the end of the experiment
+var jsPsych = initJsPsych({
     on_finish: function() {
         jsPsych.data.displayData();
-        jsPsych.data.get().csv();
-       jsPsych.data.get().localsave('csv', 'data.csv');
     }
-});
+    });
+
+//initialize jspsych               //RESTORE JUST IN CASE
+//const jsPsych = initJsPsych({
+ //   fullscreen: true,
+    //display data at the end of the experiment
+  //  on_finish: function() {
+     //   jsPsych.data.displayData();
+     //   jsPsych.data.get().csv();
+     //  jsPsych.data.get().localsave('csv', 'data.csv');
+   // }
+// });
 
 // Define the total number of stimuli
 const totalStimuli = stimuli_variables.length;
