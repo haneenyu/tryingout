@@ -845,7 +845,7 @@ var chunk_debrief_block = {
 const completionCodeTrial = {
   type: jsPsychHtmlKeyboardResponse,
   stimulus: function () {
-    return `<p>Your completion code is: <b>${randomCode}</b>.</p> <p>Please copy the completion code and paste it in this survey:</p><p><a href="https://nyu.qualtrics.com/jfe/form/SV_cACibHCfBNEGCsC" target="_blank">Survey</a></p><p>If you are facing any difficulty in receiving payment, please email ha1648@nyu.edu</p><p>When you're done, press Enter to receive the results .</p>`;
+    return `<p>Your completion code is: <b>${randomCode}</b>.</p> <p>Please </b> Press Enter to submit your data </b> That is the only way to complete the experiment </p><p>If you are facing any difficulty in receiving your allowance, please email ha1648@nyu.edu</p><p>When you're done, press Enter to receive the results .</p>`;
   },
   choices: ['Enter'],
   response_ends_trial: true,
