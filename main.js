@@ -926,7 +926,7 @@ var main_procedure = {
 var pavlovia_finish = {
     type: jsPsychPavlovia,
     command: "finish",
-    participantId: "JSPSYCH-DEMO",
+    participantId: subject,                        //edit this
     // Modify the dataFilter function to get CSV data
     dataFilter: function(data) {
         // Printing the data received from jsPsych.data.get().csv(); a CSV data structure
